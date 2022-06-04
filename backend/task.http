@@ -1,0 +1,29 @@
+@api = http://localhost:3000/task
+
+GET {{api}}
+
+###
+GET {{api}}/1
+
+###
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title": "Tarea para el lunes",
+    "descripcion": "realizar el pagina web"
+}
+
+###
+DELETE {{api}}/6
+
+###
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "descripcion": "comer"
+}
